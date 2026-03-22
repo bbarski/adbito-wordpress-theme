@@ -1,5 +1,5 @@
 <?php 
-$data = get_data_for_template('benefits');
+$data = get_data_for_template('map');
 ?>
 <section id="benefits" class="benefits-section">
 	<div class="benefits-container">
