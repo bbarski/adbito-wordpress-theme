@@ -56,6 +56,7 @@ function get_social_share_links() {
 	];
 }
 
+
 add_action('wp_footer', 'floating_social_bar');
 function floating_social_bar() {
     if (get_theme_mod('theme_social_sharing', false)) {
@@ -63,6 +64,12 @@ function floating_social_bar() {
     }
 }
 
+
+function contact_section_visibility() {
+    if (get_theme_mod('contact_section_visibility', false)) {
+        get_template_part('components/map');
+    }
+}
 
 require_once get_stylesheet_directory() . '/inc/editor/meta-desc-box.php';
 require_once get_stylesheet_directory() . '/inc/init-css.php';

@@ -9,7 +9,7 @@
         get_template_part('components/about');
         get_template_part('components/services');
         get_template_part('components/testimonials');
-	    get_template_part('components/map');
+	    contact_section_visibility();
         the_content();
     elseif (is_home()) :
         get_template_part('components/blog');

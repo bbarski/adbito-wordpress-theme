@@ -22,16 +22,16 @@ $customizer_sections_config = [
 
 			]],
 		'mytheme_header_section' => [
-        'title'    => 'Theme Colors',
+        'title'    => 'Theme Color Paletes',
         'priority' => 19,
         'settings' => [
-			'theme_colors'   => ['outdoor-night', 'Theme colors', 'radio',
+			'theme_colors'   		=> ['outdoor-night', 'Theme colors', 'radio',
 										 ['outdoor-night'  => 'outdoor-night',
 										  'outdoor' => 'outdoor',
 										  'dark' => 'dark',
 										  'light' => 'light',
-										  'retro-games' => 'retro-games',
-			]],
+										  'retro-games' => 'retro-games',]
+									   ],
         ],
     ],
 	    'mytheme_custom_logo' => [
@@ -120,6 +120,16 @@ $customizer_sections_config = [
 			'testimonials_image_4' 			 => ['Testimonials Image 4', 'Testimonials Image', 'image'],
 			'testimonials_text_4' 			 => ['Testimonials Text 4', 'Testimonials Text', 'textarea'],
 			'testimonials_name_4' 			 => ['Testimonials Name 4', 'Testimonials Name', 'text'],
+		]
+    ],
+		'mytheme_contact_section' => [
+        'title'    => 'Contact Section',
+		'priority' => 27,
+        'settings' => [
+			'contact_section_visibility' => ['enable', 'Contact section visibility', 'checkbox'],
+        	'contact_section_title' 	 => ['Contact section title', 'Contact Section Custom Title Text', 'text'],
+			'contact_section_phn' 		 => ['123456789','Contact Section Phone Number','text'],
+			'leaflet_map_shortcodes' 	 => ['[leaflet-map lat=52.34492251711576 lng=21.24164164066315 zoom=18][leaflet-marker lat=52.34475210731323 lng=21.241620182991028]', 'Leaflet Map Shortcodes', 'textarea'],
 		]
     ]
 ];
