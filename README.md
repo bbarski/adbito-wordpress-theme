@@ -52,7 +52,7 @@ Strukturę można dowolnie rozszerzać zgodnie z potrzebami projektu.
 
 ### Licencja
 
-[MIT](LICENSE)
+[GPLv2](LICENSE)
 
 ---
 
@@ -103,4 +103,4 @@ Great for fast prototyping and minimal WordPress websites that don’t rely on v
 
 ### License
 
-[MIT](LICENSE)
+[GPLv2](LICENSE)
