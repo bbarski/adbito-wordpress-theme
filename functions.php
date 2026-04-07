@@ -64,11 +64,22 @@ function floating_social_bar() {
     }
 }
 
-
-function contact_section_visibility() {
-    if (get_theme_mod('contact_section_visibility', false)) {
-        get_template_part('components/map');
+/**
+ * Wyświetla sekcję, jeśli jest włączona w Customizerze.
+ *
+ * @param string $section_mod   Nazwa ustawienia w Customizerze (np. 'contact_section_visibility').
+ * @param string $template_part Nazwa pliku szablonu (np. 'components/map').
+ */
+function display_section_if_enabled($section_mod, $template_part) {
+    if (get_theme_mod($section_mod, false)) {
+        get_template_part($template_part);
     }
+}
+
+add_action('wp_head', 'hero_image_border_raadius');
+function hero_image_border_raadius() {
+    $border_radius = get_theme_mod('hero_image_border_radius', 8);
+    echo '<style>.hero-image img { border-radius: ' . esc_attr($border_radius) . 'px; }</style>';
 }
 
 require_once get_stylesheet_directory() . '/inc/editor/meta-desc-box.php';

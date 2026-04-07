@@ -1,6 +1,4 @@
-<?php
-$data = get_data_for_template('about');
-?>
+<?php $data = get_data_for_template('about'); ?>
 <section id="about-us" class="about-us-section">
     <div class="about-us-container <?php echo esc_html($data['about_image_position']) == 'right' ? 'image-right' : 'image-left'; ?>">
         <h2 class="section-title"><?php echo esc_html($data['about_section_title']); ?></h2>
@@ -14,4 +12,3 @@ $data = get_data_for_template('about');
         </div>
     </div>
 </section>
-

@@ -53,9 +53,13 @@
     max-height: 100%;
     width: auto;
     height: auto;
-    border-radius: 8px;
     object-fit: contain;
 }
+
+
+/*.hero-image img {
+    border-radius: 8px;
+}*/
 
 .hero-text {
     padding: 20px;

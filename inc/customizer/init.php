@@ -45,11 +45,13 @@ $customizer_sections_config = [
         'title'    => 'Hero Section',
         'priority' => 21,
         'settings' => [
+			'hero_section_visibility' => ['enable', 'Hero section visibility', 'checkbox'],
             'hero_headline'    => ['Your headline goes here.', 'Custom Hero Headline Text', 'text'],
             'hero_subheadline' => ['Your subheadline goes here.', 'Custom Hero Subheadline Text', 'text'],
             'hero_cta_text'    => ['Your CTA text goes here.', 'Custom CTA Button Text', 'text'],
             'hero_cta_url'     => ['', 'Custom CTA Button URL', 'url'],
             'hero_image'       => ['', 'Hero Image', 'image'],
+			'hero_image_border_radius'	=> ['8', 'Hero Image Border Radius', 'number'],
         ],
     ],
 	'mytheme_benefits_section' => [
@@ -57,6 +59,7 @@ $customizer_sections_config = [
 		'priority' => 22,
         'settings' => [
         //'mytheme_benefits_count' => [3, 'Number of Benefits', 'number'],
+        	'benefits_section_visibility' => ['enable', 'Benefits section visibility', 'checkbox'],
         	'benefits_section_title' 	 => ['Benefits section title', 'Benefits Custom Title Text', 'text'],
 			'benefit_1_title' 			 => ['Benefit 1 Title', 'Benefit 1 Title', 'text'],
 			'benefit_1_text' 			 => ['Benefit 1 Text', 'Benefit 1 Text', 'textarea'],
@@ -70,6 +73,7 @@ $customizer_sections_config = [
         'title'    => 'Front Page Gallery Section',
 		'priority' => 23,
         'settings' => [
+			'gallery_section_visibility' => ['enable', 'Gallery section visibility', 'checkbox'],
         	'gallery_section_title' 	 => ['Front Page Gallery section title', 'Front Page Gallery Custom Title Text', 'text'],
 			'gallery_1_image' 			 => ['Gallery 1 Image', 'Gallery 1 Image', 'image'],
 			'gallery_2_image' 			 => ['Gallery 2 Image', 'Gallery 2 Image', 'image'],
@@ -87,6 +91,7 @@ $customizer_sections_config = [
         'title'    => 'About Us Section',
 		'priority' => 24,
         'settings' => [
+			'about_section_visibility' => ['enable', 'About section visibility', 'checkbox'],
         	'about_section_title' 	 	 => ['About Us section title', 'About Us Custom Title Text', 'text'],
 			'about_image' 			     => ['About Us Image', 'About Us Image', 'image'],
 			'about_image_position'       => ['left', 'Image Position (Left or Right)', 'radio', ['left'  => 'Left', 'right' => 'Right',]],
@@ -97,6 +102,7 @@ $customizer_sections_config = [
         'title'    => 'Services Section',
 		'priority' => 25,
         'settings' => [
+			'services_section_visibility' => ['enable', 'Services section visibility', 'checkbox'],
         	'services_section_title' 	 	 => ['Services section title', 'Services Custom Title Text', 'text'],
 			'services_image' 			     => ['Services Image', 'Services Image', 'image'],
 			'services_image_position'        => ['left', 'Image Position (Left or Right)', 'radio', ['left'  => 'Left', 'right' => 'Right',]],
@@ -107,6 +113,7 @@ $customizer_sections_config = [
         'title'    => 'Testimonials Section',
 		'priority' => 26,
         'settings' => [
+			'testimonials_section_visibility' => ['enable', 'Testimoniaals section visibility', 'checkbox'],
         	'testimonials_section_title' 	 => ['Testimonials section title', 'Testimonials Custom Title Text', 'text'],
 			'testimonials_image_1' 			 => ['Testimonials Image 1', 'Testimonials Image', 'image'],
 			'testimonials_text_1' 			 => ['Testimonials Text 1', 'Testimonials Text', 'textarea'],
@@ -128,7 +135,10 @@ $customizer_sections_config = [
         'settings' => [
 			'contact_section_visibility' => ['enable', 'Contact section visibility', 'checkbox'],
         	'contact_section_title' 	 => ['Contact section title', 'Contact Section Custom Title Text', 'text'],
+			'contact_section_adress_line1' 	 => ['Contact section adress line 1', 'Contact section adress line 1 Text', 'text'],
+			'contact_section_adress_line2' 	 => ['Contact section adress line 2', 'Contact section adress line 2 Text', 'text'],
 			'contact_section_phn' 		 => ['123456789','Contact Section Phone Number','text'],
+			'contact_section_mail' 		 => ['you@youmail.com','Contact Section Email Adress','text'],
 			'leaflet_map_shortcodes' 	 => ['[leaflet-map lat=52.34492251711576 lng=21.24164164066315 zoom=18][leaflet-marker lat=52.34475210731323 lng=21.241620182991028]', 'Leaflet Map Shortcodes', 'textarea'],
 		]
     ]
