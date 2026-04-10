@@ -4,6 +4,11 @@
 
 .services-container {
     width: 100%;
+    max-width: var(--width-max-container);
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .services-content {

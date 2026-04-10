@@ -7,6 +7,15 @@
     overflow: hidden;
 }
 
+.gallery-container {
+    width: 100%;
+    max-width: var(--width-max-container);
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
 .gallery {
     display: flex;
     flex-wrap: wrap;

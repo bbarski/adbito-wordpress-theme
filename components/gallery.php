@@ -1,6 +1,6 @@
 <?php $data = get_data_for_template('gallery'); ?>
 <section class="gallery-section">
-	<div class="galery-container">
+	<div class="gallery-container">
 		<h2 class="section-title">
 			<?php echo esc_html($data['gallery_section_title']); ?>
 		</h2>
