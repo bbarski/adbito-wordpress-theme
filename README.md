@@ -7,20 +7,19 @@
 
 ## 🇵🇱 Polski
 
-Lekki i konfigurowalny motyw potomny WordPress oparty na [`starter-theme`](https://github.com/bbarski/starter-theme). Zaprojektowany z myślą o wydajności, prostocie i szybkim tworzeniu motywów bez zbędnych dodatków.
+Lekki i konfigurowalny motyw. Zaprojektowany z myślą o wydajności, prostocie i szybkim tworzeniu motywów bez zbędnych dodatków.
 
 ### Wymagania
 
 - WordPress 6.0 lub nowszy  
-- Motyw nadrzędny: [`starter-theme`](https://github.com/bbarski/starter-theme) (musi być zainstalowany i aktywny)
+
 
 ### Instalacja
 
 ```bash
-git clone https://github.com/bbarski/adbito-child-starter-theme.git wp-content/themes/adbito-child-starter-theme
+git clone [https://github.com/bbarski/adbito-child-starter-theme.git](https://github.com/bbarski/adbito-basic-wordpress-theme.git) wp-content/themes/adbito-basic-wordpress-theme
 ```
 
-Upewnij się, że katalog `starter-theme` znajduje się w `wp-content/themes/`.
 
 Następnie aktywuj motyw w panelu WordPress lub przez WP-CLI:
 
@@ -40,8 +39,7 @@ wp theme activate adbito-child-starter-theme
 
 Motyw pozwala na:
 
-- Tworzenie layoutów w Tailwind CSS lub własnym stylu
-- Nadpisywanie szablonów motywu nadrzędnego
+- Tworzenie layoutów wewłasnym stylu
 - Dodawanie hooków i filtrów WordPressa
 
 Strukturę można dowolnie rozszerzać zgodnie z potrzebami projektu.
