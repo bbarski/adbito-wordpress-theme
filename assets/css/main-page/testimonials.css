@@ -21,7 +21,6 @@
     align-items: center;
     gap: 20px;
     position: relative;
-    max-width: calc(100% * 4);
     width: 100%;
     margin: auto;
     overflow: hidden; /* Ukryj slajdy poza obszarem */
@@ -30,7 +29,7 @@
 /* Slides Container */
 .slides {
     display: flex;
-    width: calc(100% * 4); /* 4 slajdy, każdy o szerokości 100% */
+    width: 100%; /* Use 100% width to make it responsive */
     animation: slide-animation 30s infinite;
     align-items: stretch;
 }
@@ -45,6 +44,11 @@
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 /* Reszta stylów pozostaje bez zmian */
@@ -54,6 +58,7 @@
     justify-content: center;
     align-items: center;
     height: 100%;
+    width: 100%;
 }
 
 .testimonial-photo img {
@@ -73,6 +78,7 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 10px;
+    width: 100%;
 }
 
 .testimonial-name {
@@ -121,7 +127,7 @@
 
 @media (max-width: 800px) {
     .slides {
-        width: calc(100% * 4);
+        width: 100%; /* Ensure the slides container is responsive */
     }
     .testimonial-slide {
         flex: 0 0 100%;
@@ -130,5 +136,14 @@
     .testimonial-photo img {
         width: 80px;
         height: 80px;
+    }
+    .testimonial-content {
+        padding: 0 10px; /* Add some padding to ensure content doesn't touch the edges */
+    }
+    .testimonial-text {
+        font-size: 14px; /* Adjust font size for better readability on smaller screens */
+    }
+    .testimonial-name {
+        font-size: 16px; /* Adjust font size for better readability on smaller screens */
     }
 }
