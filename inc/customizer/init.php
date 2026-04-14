@@ -1,4 +1,20 @@
 <?php
+// Ścieżka do pliku JSON
+//$jsonFile = 'config.json';
+
+// Odczytanie zawartości pliku
+//$jsonContent = file_get_contents($jsonFile);
+
+// Dekodowanie JSON do tablicy asocjacyjnej
+//$customizerSectionsConfig = json_decode($jsonContent, true);
+
+// Sprawdzenie, czy dekodowanie się powiodło
+//if ($customizerSectionsConfig === null && json_last_error() !== JSON_ERROR_NONE) {
+//    die('Błąd dekodowania JSON: ' . json_last_error_msg());
+//}
+
+// Teraz możesz używać danych z $customizerSectionsConfig
+//print_r($customizerSectionsConfig);
 
 $customizer_sections_config = [
 	
@@ -6,7 +22,7 @@ $customizer_sections_config = [
         'title'    => 'Social Sharing',
         'priority' => 18,
         'settings' => [
-			'theme_social_sharing'   => ['enable', 'Social Sharing', 'checkbox']
+			'theme_social_sharing'   => ['disable', 'Social Sharing', 'checkbox']
 
 			]],
 		'mytheme_header_section' => [
@@ -33,7 +49,7 @@ $customizer_sections_config = [
         'title'    => 'Hero Section',
         'priority' => 21,
         'settings' => [
-			'hero_section_visibility' => ['enable', 'Hero section visibility', 'checkbox'],
+			'hero_section_visibility' => ['disable', 'Hero section visibility', 'checkbox'],
             'hero_headline'    => ['Your headline goes here.', 'Custom Hero Headline Text', 'text'],
             'hero_subheadline' => ['Your subheadline goes here.', 'Custom Hero Subheadline Text', 'text'],
             'hero_cta_text'    => ['Your CTA text goes here.', 'Custom CTA Button Text', 'text'],

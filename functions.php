@@ -104,3 +104,4 @@ require_once get_stylesheet_directory() . '/inc/init-css.php';
 require_once get_stylesheet_directory() . '/inc/mock-img.php';
 require_once get_stylesheet_directory() . '/inc/customizer/builder.php';
 require_once get_stylesheet_directory() . '/inc/customizer/init.php';
+require_once get_stylesheet_directory() . '/inc/custom-user.php';

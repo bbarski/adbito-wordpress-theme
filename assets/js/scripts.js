@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const trigger = document.createElement("div");
         trigger.className = "section-trigger";
         trigger.style.position = "absolute";
-        trigger.style.top = "20%";
+        trigger.style.top = "10%";
         trigger.style.width = "100%";
         trigger.style.height = "1px";
         section.appendChild(trigger);
